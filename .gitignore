@@ -34,3 +34,10 @@
 
 # Unity YAML scene & prefab merge artifacts
 *.unityproj.m
+
+# GitHub Copilot – never commit these
+/CopilotIndices/
+/FileContentIndex/
+/.copilot/
+/copilot.db
+*.copilotindex
