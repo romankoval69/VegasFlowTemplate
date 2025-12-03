@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\",
+  "WorkspaceRootPath": "C:\\MyProjects\\VegasFlowTemplate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|c:\\users\\roman\\onedrive\\desktop\\vegasflow\\assets\\core\\scripts\\forceassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\forceassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|C:\\MyProjects\\VegasFlowTemplate\\assets\\core\\scripts\\reel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\reel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|c:\\users\\roman\\onedrive\\desktop\\vegasflow\\assets\\core\\scripts\\symbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\symbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|c:\\myprojects\\vegasflowtemplate\\assets\\core\\scripts\\forceassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\forceassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\assets\\core\\scripts\\autoassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\autoassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|C:\\MyProjects\\VegasFlowTemplate\\assets\\core\\scripts\\autoassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\autoassign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\assets\\core\\scripts\\reel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\reel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|C:\\MyProjects\\VegasFlowTemplate\\assets\\core\\scripts\\symbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\symbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\assets\\core\\scripts\\slotmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73963578-5BCF-260E-564B-0577144BD0F4}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\slotmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|C:\\MyProjects\\VegasFlowTemplate\\assets\\core\\scripts\\slotmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\slotmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ForceAssign.cs",
-              "DocumentMoniker": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\ForceAssign.cs",
+              "DocumentMoniker": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\ForceAssign.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\Scripts\\ForceAssign.cs",
-              "ToolTip": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\ForceAssign.cs",
+              "ToolTip": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\ForceAssign.cs",
               "RelativeToolTip": "Assets\\Core\\Scripts\\ForceAssign.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADwvx8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T08:12:43.528Z",
               "EditorCaption": ""
@@ -49,9 +49,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AutoAssign.cs",
-              "DocumentMoniker": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\AutoAssign.cs",
+              "DocumentMoniker": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\AutoAssign.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\Scripts\\AutoAssign.cs",
-              "ToolTip": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\AutoAssign.cs",
+              "ToolTip": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\AutoAssign.cs",
               "RelativeToolTip": "Assets\\Core\\Scripts\\AutoAssign.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAwCwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -59,36 +59,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Reel.cs",
-              "DocumentMoniker": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\Reel.cs",
+              "DocumentMoniker": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\Reel.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\Scripts\\Reel.cs",
-              "ToolTip": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\Reel.cs",
-              "RelativeToolTip": "Assets\\Core\\Scripts\\Reel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\Reel.cs*",
+              "RelativeToolTip": "Assets\\Core\\Scripts\\Reel.cs*",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAiwGsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T07:53:37.774Z"
+              "WhenOpened": "2025-12-02T07:53:37.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Symbol.cs",
-              "DocumentMoniker": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\Symbol.cs",
+              "DocumentMoniker": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\Symbol.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\Scripts\\Symbol.cs",
-              "ToolTip": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\Symbol.cs",
+              "ToolTip": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\Symbol.cs",
               "RelativeToolTip": "Assets\\Core\\Scripts\\Symbol.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwvyEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T07:06:24.949Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T07:06:24.949Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "SlotMachine.cs",
-              "DocumentMoniker": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\SlotMachine.cs",
+              "DocumentMoniker": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\SlotMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Core\\Scripts\\SlotMachine.cs",
-              "ToolTip": "C:\\Users\\Roman\\OneDrive\\Desktop\\VegasFlow\\Assets\\Core\\Scripts\\SlotMachine.cs",
+              "ToolTip": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\SlotMachine.cs",
               "RelativeToolTip": "Assets\\Core\\Scripts\\SlotMachine.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

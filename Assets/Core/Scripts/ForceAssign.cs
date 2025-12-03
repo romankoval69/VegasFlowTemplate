@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ForceAssignSymbols : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class ForceAssignSymbols : MonoBehaviour
         {
             if (s.image == null) s.image = s.GetComponent<Image>();
 
-            s.symbolSprites = new Sprite.Create(Texture2D.whiteTexture, new Rect(0, 0, 1, 1), Vector2.one * 0.5f, 100) as Sprite[12]; // dummy array size
+            // Fix for CS0426 and CS0270: Correctly initialize the Sprite array and remove invalid syntax
+            s.symbolSprites = new Sprite[12];
 
             for (int i = 0; i < 12; i++)
             {
