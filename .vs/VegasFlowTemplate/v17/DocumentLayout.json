@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyProjects\\VegasFlowTemplate\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|c:\\myprojects\\vegasflowtemplate\\assets\\core\\scripts\\slotmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\slotmachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|C:\\MyProjects\\VegasFlowTemplate\\assets\\core\\scripts\\reel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1551BB52-C2B0-04FB-4A99-0554BEB8752B}|Assembly-CSharp.csproj|solutionrelative:assets\\core\\scripts\\reel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SlotMachine.cs",
+              "DocumentMoniker": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\SlotMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\Scripts\\SlotMachine.cs",
+              "ToolTip": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\SlotMachine.cs",
+              "RelativeToolTip": "Assets\\Core\\Scripts\\SlotMachine.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAADgvzoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T00:25:12.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reel.cs",
+              "DocumentMoniker": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\Reel.cs",
+              "RelativeDocumentMoniker": "Assets\\Core\\Scripts\\Reel.cs",
+              "ToolTip": "C:\\MyProjects\\VegasFlowTemplate\\Assets\\Core\\Scripts\\Reel.cs",
+              "RelativeToolTip": "Assets\\Core\\Scripts\\Reel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:12:09.223Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
