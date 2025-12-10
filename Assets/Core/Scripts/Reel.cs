@@ -3,22 +3,24 @@ using System.Collections;
 
 public class Reel : MonoBehaviour
 {
-    [Header("=== Reel Setup ===]
+    [Header("=== Reel Setup ===")]
     public Transform symbolContainer;      // the "Symbols" child object
     public float symbolHeight = 300f;      // exact height of ONE symbol (change in Inspector)
     public int visibleSymbols = 3;         // we always show 3
 
-    [Header("Spin Feel]
-    public float spinTime = 1.8f;          // total spin duration per reel
-    public float minSpeed = 3000f;         // pixels/sec at start
-    public float maxSpeed = 8000f;         // peak speed during blur
+    [Header("Spin Feel")]
+    public float spinTime = 4.0f;          // total spin duration per reel (slowed slightly)
+    public float minSpeed = 300f;          // pixels/sec at end (slower)
+    public float maxSpeed = 1200f;         // pixels/sec at start (slower)
 
     private float totalHeight;
     private bool spinning = false;
 
     void Awake()
     {
-        totalHeight = symbolHeight * 24; // pretend we have 24 symbols → perfect loop
+        // compute total height from actual child count so wrapping is precise
+        int childCount = symbolContainer != null ? symbolContainer.childCount : 0;
+        totalHeight = symbolHeight * Mathf.Max(1, childCount);
     }
 
     public void StartSpin()
@@ -35,11 +37,29 @@ public class Reel : MonoBehaviour
         while (elapsed < spinTime)
         {
             float t = elapsed / spinTime;
-            float currentSpeed = Mathf.Lerp(maxSpeed, minSpeed, t); // fast → slow
+            // start fast (max) and slow down to min
+            float currentSpeed = Mathf.Lerp(maxSpeed, minSpeed, t);
 
+            // move container down
             symbolContainer.localPosition += Vector3.down * currentSpeed * Time.deltaTime;
 
-            // Perfect circular wrap
+            // Continuous wrap: whenever we've moved by one symbolHeight,
+            // shift the first (top) child to the bottom by changing sibling order only.
+            // Do NOT modify individual child localPositions (LayoutGroups will reposition children and cause flicker/gaps).
+            while (symbolContainer.localPosition.y <= -symbolHeight)
+            {
+                // move container back up by one symbol unit to keep positions consistent
+                symbolContainer.localPosition += Vector3.up * symbolHeight;
+
+                if (symbolContainer.childCount > 1)
+                {
+                    // move the first child to the end of sibling order.
+                    // LayoutGroup (if present) will immediately layout children without us touching their positions.
+                    symbolContainer.GetChild(0).SetAsLastSibling();
+                }
+            }
+
+            // safety wrap if container goes extremely far (keeps values bounded)
             if (symbolContainer.localPosition.y <= -totalHeight)
                 symbolContainer.localPosition += Vector3.up * totalHeight;
 
@@ -47,18 +67,21 @@ public class Reel : MonoBehaviour
             yield return null;
         }
 
-        // Auto-stop on next clean position after spin ends
-        StopOnNextSymbol();
+        // Stop WITHOUT snapping to the nearest symbol. Leave the container exactly where it stopped
+        // so reels stay in the same visual position they had at the end of spin (no sudden snap).
+        spinning = false;
     }
 
     public void StopOnNextSymbol()
     {
+        // Backwards-compatible external call: stop immediately and do NOT snap.
         StopAllCoroutines();
-        StartCoroutine(SnapToNearestSymbol());
+        spinning = false;
     }
 
     IEnumerator SnapToNearestSymbol()
     {
+        // Kept for optional use but not used by default flow.
         float currentY = symbolContainer.localPosition.y;
         float targetY = -Mathf.Round(currentY / symbolHeight) * symbolHeight;
 
@@ -74,8 +97,8 @@ public class Reel : MonoBehaviour
         while (time < 0.25f)
         {
             time += Time.deltaTime;
-            float t = time / 0.25f;
-            symbolContainer.localPosition = Vector3.Lerp(start, overshootPos, t);
+            float s = time / 0.25f;
+            symbolContainer.localPosition = Vector3.Lerp(start, overshootPos, s);
             yield return null;
         }
 
@@ -84,9 +107,9 @@ public class Reel : MonoBehaviour
         while (time < 0.2f)
         {
             time += Time.deltaTime;
-            float t = time / 0.2f;
-            t = Mathf.Sin(t * Mathf.PI * 0.5f); // smooth ease-out
-            symbolContainer.localPosition = Vector3.Lerp(overshootPos, targetPos, t);
+            float s = time / 0.2f;
+            s = Mathf.Sin(s * Mathf.PI * 0.5f); // smooth ease-out
+            symbolContainer.localPosition = Vector3.Lerp(overshootPos, targetPos, s);
             yield return null;
         }
 
@@ -97,12 +120,37 @@ public class Reel : MonoBehaviour
     // Helper for external control (bonus features, etc.)
     public void InstantStopAt(int[] visibleIDs) // visibleIDs = new int[] { top, middle, bottom }
     {
+        // Stop spinning coroutines but DO NOT forcibly snap the container position.
+        // Snapping the container caused the visible "snap down" and white gap when LayoutGroups were used.
         StopAllCoroutines();
-        float targetY = -symbolHeight; // middle symbol centered
-        symbolContainer.localPosition = new Vector3(0, targetY, 0);
+        spinning = false;
 
+        // Update visible Symbol components' IDs so the visual symbols match the desired result.
+        // We avoid changing the container position or child transforms to prevent layout flicker.
         var syms = symbolContainer.GetComponentsInChildren<Symbol>();
-        for (int i = 0; i < 3; i++)
-            syms[i + 1].SetSymbolID(visibleIDs[i]);
+
+        // Attempt to map the requested visibleIDs to the currently visible symbol components.
+        // Many setups have the visible symbols as children[1..3] (top→bottom) — preserve that behavior if present.
+        if (syms.Length >= visibleSymbols + 2)
+        {
+            // common layout: syms[1] = top, syms[2] = middle, syms[3] = bottom
+            for (int i = 0; i < visibleSymbols && i < visibleIDs.Length; i++)
+            {
+                int idx = i + 1;
+                if (idx < syms.Length)
+                    syms[idx].SetSymbolID(visibleIDs[i]);
+            }
+        }
+        else
+        {
+            // Fallback: set the last visibleSymbols found from top to bottom
+            int start = Mathf.Max(0, syms.Length - visibleSymbols);
+            for (int i = 0; i < visibleSymbols && i < visibleIDs.Length; i++)
+            {
+                int idx = start + i;
+                if (idx < syms.Length)
+                    syms[idx].SetSymbolID(visibleIDs[i]);
+            }
+        }
     }
 }
